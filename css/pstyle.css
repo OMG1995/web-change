@@ -1,0 +1,414 @@
+:root {
+  /* --page-1-color: steelblue;
+    --page-2-color: tan;
+    --page-3-color: teal;
+    --page-4-color: slateblue; */
+  --animate-speed: 2s;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.list {
+  margin: 0.5rem;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem;
+  border-bottom: #444 dotted 1px;
+}
+
+a {
+  text-decoration: none;
+  color: #93cb52;
+}
+.m-heading {
+  margin-top: 30rem;
+}
+/* Үндсэн цэс */
+#tses {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#tses ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#tses ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 1rem;
+}
+
+#tses ul li a:hover {
+  background-color: #93cb52;
+  border-radius: 5px;
+}
+
+.text-primary {
+  color: #93cb52;
+}
+
+/* Хуудасны өнгө */
+/* #page-1 {
+  background: var(--page-1-color);
+}
+#page-2 {
+  background: var(--page-2-color);
+}
+#page-3 {
+  background: var(--page-3-color);
+}
+#page-4 {
+  background: var(--page-4-color);
+} */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 4rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 0 2rem;
+  /* overlay  */
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.content h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 1rem;
+}
+
+.content p {
+  font-size: 1.3rem;
+}
+
+.page h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 1rem;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.page p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #f4f4f4;
+  color: #333;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover,
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Хуудасны анимаци */
+#page-1 h1 {
+  transform: translateY(-500px);
+  animation: heading var(--animate-speed) forwards ease-in;
+  color: rgb(218, 238, 200);
+}
+
+/* Keyframes */
+@keyframes heading {
+  to {
+    transform: translateY(0px);
+  }
+}
+
+#page-1 p {
+  transform: translateX(-1900px);
+  animation: page-text var(--animate-speed) forwards ease-in 1s;
+  color: rgb(218, 238, 200);
+}
+
+/* Keyframes */
+@keyframes page-text {
+  to {
+    transform: translateX(0px);
+  }
+}
+
+#page-1 {
+  background: #333 url("../img/ub\ nigth.jpeg") no-repeat center center/cover;
+  height: 99.3vh;
+  color: #f4f4f4;
+}
+
+#page-2 {
+  background: rgb(143, 148, 211) url("../img/han\ huuchin.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-3 {
+  background: rgb(143, 148, 211) url("../img/han\ 1\ duusw.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-4 {
+  background: rgb(143, 148, 211) url("../img/pre\ ehlel.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-5 {
+  background: rgb(143, 148, 211) url("../img/perm\ ehlel\ 1.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-6 {
+  background: rgb(143, 148, 211) url("../img/perm\ ehlel\ 2.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-7 {
+  background: rgb(143, 148, 211) url("../img/prem\ dund.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-8 {
+  background: rgb(143, 148, 211) url("../img/prem\ dund\ 1.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-9 {
+  background: rgb(143, 148, 211) url("../img/prem\ duusw.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-10 {
+  background: rgb(143, 148, 211) url("../img/prem\ duusaw\ 2.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-11 {
+  background: rgb(143, 148, 211) url("../img/prem\ duusaw\ 1.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-12 {
+  background: rgb(143, 148, 211) url("../img/p\ ehlew.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-13 {
+  background: rgb(143, 148, 211) url("../img/p\ dund.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-14 {
+  background: rgb(143, 148, 211) url("../img/p\ dund\ 4.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-15 {
+  background: rgb(143, 148, 211) url("../img/p\ dund\ 3.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-16 {
+  background: rgb(143, 148, 211) url("../img/p\ dund2.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-17 {
+  background: rgb(143, 148, 211) url("../img/p\ dund\ 1.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-18 {
+  background: rgb(143, 148, 211) url("../img/p\ duusaw1.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-19 {
+  background: rgb(143, 148, 211) url("../img/hure.png") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-20 {
+  background: rgb(143, 148, 211) url("../img/mongen.png") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-21 {
+  background: rgb(143, 148, 211) url("../img/32.png") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-22 {
+  background: rgb(143, 148, 211) url("../img/hotel\ ehlel\ 2.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-23 {
+  background: rgb(143, 148, 211) url("../img/hotel\ ehlew.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-24 {
+  background: rgb(143, 148, 211) url("../img/hotel\ duusaw\ 1.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-25 {
+  background: rgb(143, 148, 211) url("../img/hotel\ duusaw.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-26 {
+  background: rgb(143, 148, 211) url("../img/orts\ ehlel.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-27 {
+  background: rgb(143, 148, 211) url("../img/orts\ duusw\ 1.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-28 {
+  background: rgb(143, 148, 211) url("../img/sansar\ ehlel.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-29 {
+  background: rgb(143, 148, 211) url("../img/20210923_184050_005.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-30 {
+  background: rgb(143, 148, 211) url("../img/sansar\ duusaw\ 1.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-31 {
+  background: rgb(143, 148, 211) url("../img/19\ ehlew.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-32 {
+  background: rgb(143, 148, 211) url("../img/19\ duuswa.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-33 {
+  background: rgb(143, 148, 211) url("../img/achtan.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-34 {
+  background: rgb(143, 148, 211) url("../img/ach\ duusaw.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-35 {
+  background: rgb(143, 148, 211) url("../img/tengis\ hoid\ ehlew.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-36 {
+  background: rgb(143, 148, 211) url("../img/t.h.yawts.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-37 {
+  background: rgb(143, 148, 211) url("../img/t.h.yawts1.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
+#page-38 {
+  background: rgb(143, 148, 211) url("../img/last.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #f4f4f4;
+}
